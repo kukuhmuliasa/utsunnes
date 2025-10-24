@@ -91,7 +91,7 @@
                 $umur = (int)$_POST['umur'];
                 $asalKota = $_POST['asal_kota'];
 
-                if ($umur <= 10) {
+                if ($umur < 10) {
                     echo "<div class='error-message'> ❌ Error: Umur minimal 10 tahun!. Silakan isi kembali</div>";
                     echo "<div class='back-button'><a href='index.html'>Kembali ke Form Registrasi</a></div>";
                     exit();
